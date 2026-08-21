@@ -1,0 +1,53 @@
+import Link from 'next/link'
+import NewsletterSignup from './NewsletterSignup'
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-inner">
+          <div className="footer-brand">
+            <p><strong>Medical Cannabis Awareness Week</strong></p>
+            <p>Together for Patients. A UK-wide awareness, education and community campaign for prescribed cannabis-based medicines.</p>
+            <p className="footer-note">Registered in England and Wales</p>
+          </div>
+
+          <div className="footer-links">
+            <h5>Site</h5>
+            <Link href="/about">About</Link>
+            <Link href="/events">Programme</Link>
+            <Link href="/partners">Partners</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+
+          <div className="footer-links">
+            <h5>Get Involved</h5>
+            <Link href="/get-involved">Attend an event</Link>
+            <Link href="/get-involved#share">Share your story</Link>
+            <Link href="/get-involved#partner">Become a partner</Link>
+            <Link href="/get-involved#support">Support MCAW</Link>
+          </div>
+
+          <div className="footer-links">
+            <h5>Legal</h5>
+            <Link href="/policies">All policies</Link>
+            <Link href="/policies/privacy">Privacy policy</Link>
+            <Link href="/policies/cookies">Cookie policy</Link>
+            <Link href="/policies/terms">Terms &amp; conditions</Link>
+            <Link href="/policies/complaints">Complaints</Link>
+            <Link href="/policies/safeguarding">Safeguarding</Link>
+          </div>
+
+          <div className="footer-newsletter">
+            <NewsletterSignup variant="compact" />
+          </div>
+        </div>
+
+        <div className="footer-bottom">
+          <p>MCAW does not provide medical advice. Always consult your prescribing clinician.</p>
+          <p>&copy; {new Date().getFullYear()} Medical Cannabis Awareness Week</p>
+        </div>
+      </div>
+    </footer>
+  )
+}
