@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const links = [
   { href: '/about', label: 'About' },
   { href: '/events', label: 'Programme' },
   { href: '/partners', label: 'Partners' },
-  { href: '/newsletter', label: 'Newsletter' },
+  { href: '/get-involved', label: 'Get Involved' },
+  { href: '/contact', label: 'Contact' },
 ]
 
 export default function Nav() {
@@ -17,7 +19,14 @@ export default function Nav() {
     <header className="site-nav">
       <div className="container site-nav__inner">
         <Link href="/" className="site-nav__logo" aria-label="MCAW home">
-          MCAW
+          <Image
+            src="/images/MCAW_LOGO_Primary_Light_Transparent_v1.0.png"
+            alt="Medical Cannabis Awareness Week"
+            width={160}
+            height={48}
+            className="logo-img logo-img--dark"
+            priority
+          />
         </Link>
 
         <nav

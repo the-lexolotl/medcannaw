@@ -23,16 +23,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* What is MCAW */}
+      <div className="seam" />
+
+      {/* What is MCAW — editorial layout */}
       <section className="section">
         <div className="container">
-          <h2>What is MCAW?</h2>
-          <p style={{ fontSize: '1.1rem' }}>
-            MCAW brings patients, clinicians, researchers and advocacy organisations together
-            for a week of education, honest conversation and shared experience — challenging
-            stigma and improving understanding of prescribed cannabis-based medicines across
-            the UK.
-          </p>
+          <div className="editorial">
+            <div className="editorial__label">What is MCAW?</div>
+            <div className="editorial__body">
+              <p>
+                MCAW brings patients, clinicians, researchers and advocacy organisations
+                together for a week of education, honest conversation and shared
+                experience — challenging stigma and improving understanding of prescribed
+                cannabis-based medicines across the UK.
+              </p>
+              <p style={{ color: 'var(--mid-grey)' }}>
+                It's a campaign, not just a website: panels, patient stories, workshops
+                and Q&amp;As running throughout the week, with space for every part of the
+                community to take part.
+              </p>
+              <Link href="/about" className="btn btn-secondary" style={{ marginTop: '0.5rem' }}>
+                Read our story
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
 

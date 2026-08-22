@@ -73,13 +73,6 @@ export default function NewsletterPage() {
             {/* RIGHT — signup form */}
             <div style={{ position: 'sticky', top: '84px' }}>
               <NewsletterSignup variant="card" />
-              <div className="info-box" style={{ marginTop: '1.5rem' }}>
-                <p>
-                  By subscribing you agree to receive emails from MCAW. We handle your data in
-                  accordance with our{' '}
-                  <a href="/policies/privacy">Privacy Policy</a>. You can unsubscribe at any time.
-                </p>
-              </div>
             </div>
 
           </div>
