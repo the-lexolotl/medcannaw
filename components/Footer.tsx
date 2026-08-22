@@ -15,7 +15,6 @@ export default function Footer() {
               height={50}
               className="footer-logo"
             />
-            <p><strong>Medical Cannabis Awareness Week</strong></p>
             <p>Together for Patients. A UK-wide awareness, education and community campaign for prescribed cannabis-based medicines.</p>
             <p className="footer-note">Registered in England and Wales</p>
           </div>
