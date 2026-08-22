@@ -1,7 +1,5 @@
-import Nav from '../../components/Nav'
-import Footer from '../../components/Footer'
-import Link from 'next/link'
 import type { Metadata } from 'next'
+import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Policies',
@@ -25,7 +23,6 @@ const policies = [
 export default function Policies() {
   return (
     <>
-      <Nav />
       <main>
         <section className="page-hero">
           <div className="container">
@@ -61,7 +58,6 @@ export default function Policies() {
           </div>
         </section>
       </main>
-      <Footer />
     </>
   )
 }
