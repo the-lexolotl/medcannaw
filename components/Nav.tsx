@@ -20,12 +20,11 @@ export default function Nav() {
       <div className="container site-nav__inner">
         <Link href="/" className="site-nav__logo" aria-label="MCAW home">
           <Image
-            src="/images/MCAW_LOGO_Primary_Light_Transparent_v1.0.png"
+            src="/images/MCAW_LOGO_Primary_Light_Transparent_NoDate_v1.0.png"
             alt="Medical Cannabis Awareness Week"
             width={160}
             height={48}
-            className="logo-img logo-img--dark"
-            priority
+            className="logo-img"
           />
         </Link>
 

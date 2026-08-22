@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-inner">
           <div className="footer-brand">
             <Image
-              src="/images/MCAW_LOGO_Primary_Light_Transparent_v1.0.png"
+              src="/images/MCAW_LOGO_Primary_Dark_Transparent_NoDate_v1.0.png"
               alt="Medical Cannabis Awareness Week"
               width={170}
               height={50}

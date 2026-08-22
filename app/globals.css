@@ -373,7 +373,6 @@ input:focus-visible {
 
 /* ===== Logo ===== */
 .logo-img { height: 42px; width: auto; display: block; }
-.logo-img--dark { filter: brightness(0); }
 .footer-logo { height: 40px; width: auto; margin-bottom: 1rem; }
 
 /* ===== The Seam (signature divider) ===== */
