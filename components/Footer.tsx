@@ -15,7 +15,8 @@ export default function Footer() {
               height={50}
               className="footer-logo"
             />
-            <p>Together for Patients. A UK-wide awareness, education and community campaign for prescribed cannabis-based medicines.</p>
+            <p><strong>Together for Patients. </strong></p>
+            <p>A UK-wide awareness, education and community campaign for prescribed cannabis-based medicines.</p>
             <p className="footer-note">Registered in England and Wales</p>
           </div>
 
