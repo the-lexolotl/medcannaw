@@ -631,3 +631,30 @@ textarea:focus-visible {
 @media (max-width: 860px) {
   .contact-layout { grid-template-columns: 1fr; }
 }
+
+/* ===== Circle motif (from campaign graphics) ===== */
+.circle-field {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+.circle { position: absolute; border-radius: 50%; }
+.circle--fill-lime { background: var(--mcaw-lime); }
+.circle--fill-white { background: var(--mcaw-white); opacity: 0.92; }
+.circle--fill-lime-mist { background: var(--lime-mist); }
+.circle--ring-lime { border: 2px solid var(--mcaw-lime); background: transparent; }
+.circle--ring-white { border: 2px solid var(--mcaw-white); background: transparent; }
+.circle--ring-black { border: 2px solid var(--mcaw-black); background: transparent; }
+
+.section--decorative { position: relative; overflow: hidden; }
+.section--decorative .container { position: relative; z-index: 1; }
+
+@media (max-width: 700px) {
+  .circle-field .circle { transform: scale(0.65); }
+}
+
+/* Slightly softer corners to match campaign badge styling */
+.btn { border-radius: 8px; }
+.eyebrow, .section-label, .event-card__tag { border-radius: 6px; }

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import CircleField from '@/components/CircleField'
 
 export default function Contact() {
   const [activeTab, setActiveTab] = useState<'general' | 'story'>('general')
@@ -61,7 +62,8 @@ export default function Contact() {
   return (
     <>
       {/* PAGE HERO */}
-      <section className="page-hero">
+      <section className="page-hero section--decorative">
+        <CircleField variant="corner-tr" tone="on-dark" />
         <div className="container">
           <div className="section-label">Get in touch</div>
           <h1>We&apos;re Here to Help</h1>

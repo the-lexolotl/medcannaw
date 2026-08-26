@@ -1,11 +1,13 @@
 import Link from 'next/link'
 import NewsletterSignup from '@/components/NewsletterSignup'
+import CircleField from '@/components/CircleField'
 
 export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="section section--black">
+      <section className="section section--black section--decorative">
+        <CircleField variant="both" tone="on-dark" />
         <div className="container">
           <span className="eyebrow">Medical Cannabis Awareness Week</span>
           <h1 className="display">Together for Patients.</h1>
@@ -51,7 +53,8 @@ export default function HomePage() {
       </section>
 
       {/* Programme preview */}
-      <section className="section section--lime-mist">
+      <section className="section section--lime-mist section--decorative">
+        <CircleField variant="corner-tr" tone="on-light" />
         <div className="container">
           <h2>The Programme</h2>
           <p>Panels, patient stories, workshops and Q&amp;As running throughout the week.</p>

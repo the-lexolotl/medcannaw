@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import CircleField from '@/components/CircleField'
 
 export const metadata: Metadata = { title: 'About | MCAW' }
 
@@ -184,7 +185,8 @@ export default function AboutPage() {
 
       <div className="seam" />
 
-      <section className="section section--black statement">
+      <section className="section section--black statement section--decorative">
+        <CircleField variant="both" tone="on-dark" />
         <div className="container">
           <p className="display" style={{ marginBottom: 0 }}>
             One week. Many voices. One community.
