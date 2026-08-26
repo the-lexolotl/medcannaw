@@ -633,6 +633,15 @@ textarea:focus-visible {
 }
 
 /* ===== Circle motif (from campaign graphics) ===== */
+.section--decorative {
+  position: relative;
+  overflow: hidden;
+}
+.section--decorative .container {
+  position: relative;
+  z-index: 1;
+}
+
 .circle-field {
   position: absolute;
   inset: 0;
@@ -648,11 +657,10 @@ textarea:focus-visible {
 .circle--ring-white { border: 2px solid var(--mcaw-white); background: transparent; }
 .circle--ring-black { border: 2px solid var(--mcaw-black); background: transparent; }
 
-.section--decorative { position: relative; overflow: hidden; }
-.section--decorative .container { position: relative; z-index: 1; }
-
-@media (max-width: 700px) {
-  .circle-field .circle { transform: scale(0.65); }
+/* Circles are decorative edge dressing only — hide below tablet width
+   rather than risk them landing on top of reflowed text */
+@media (max-width: 900px) {
+  .circle-field { display: none; }
 }
 
 /* Slightly softer corners to match campaign badge styling */
