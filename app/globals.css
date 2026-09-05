@@ -742,3 +742,34 @@ textarea:focus-visible {
   background: #F1F1EF;
 }
 .partner-signin-inner { text-align: center; }
+
+.partners-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.partners-contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  background: #F4F7D9;
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+}
+
+.partners-contact-role {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.03em;
+  color: #6B6B68;
+}
+
+.partners-contact-name { font-weight: 600; }
+
+.partners-contact-email {
+  color: #000;
+  text-decoration: underline;
+}
+.partners-contact-email:hover { color: #6B6B68; }
