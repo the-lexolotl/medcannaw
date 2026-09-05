@@ -4,21 +4,22 @@ const RESOURCES = [
   {
     category: 'Brand',
     items: [
-      { label: 'MCAW Logo Pack (SVG + PNG)', href: '/partner-toolkit-files/mcaw-logo-pack.zip', type: 'download' },
-      { label: 'Brand Guidelines (PDF)', href: '/partner-toolkit-files/mcaw-brand-guidelines.pdf', type: 'download' },
+      { label: 'MCAW Logo Pack (SVG + PNG)', href: '/partner-toolkit-files/MCAW_LOGOS.zip', type: 'download' },
+      { label: 'MCAW Font Pack', href: '/partner-toolkit-files/MCAW_Font_Kit_Swiss_721.zip', type: 'download' },
+      { label: 'Brand Guidelines (PDF) - Awaiting Upload', href: '/partner-toolkit-files/mcaw-brand-guidelines.pdf', type: 'download' },
     ],
   },
   {
     category: 'Templates',
     items: [
-      { label: 'Social Media Template Pack', href: '/partner-toolkit-files/mcaw-social-templates.zip', type: 'download' },
-      { label: 'Email Signature Template', href: '/partner-toolkit-files/mcaw-email-signature.zip', type: 'download' },
+      { label: 'Social Media Template Pack - Awaiting Upload', href: '/partner-toolkit-files/mcaw-social-templates.zip', type: 'download' },
+      { label: 'Email Signature Template - Awaiting Upload', href: '/partner-toolkit-files/mcaw-email-signature.zip', type: 'download' },
     ],
   },
   {
     category: 'Press',
     items: [
-      { label: 'Press Packet (PDF)', href: '/partner-toolkit-files/mcaw-press-packet.pdf', type: 'download' },
+      { label: 'Press Packet (PDF) - Awaiting Upload', href: '/partner-toolkit-files/mcaw-press-packet.pdf', type: 'download' },
     ],
   },
   {
