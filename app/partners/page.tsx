@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import PartnerCard from '@/components/PartnerCard'
+import NewsletterSignup from '@/components/NewsletterSignup'
 
 export const metadata: Metadata = { title: 'Partners | MCAW' }
 
@@ -72,6 +73,18 @@ export default function PartnersPage() {
             {partners.map((partner) => (
               <PartnerCard key={partner.name} {...partner} />
             ))}
+
+            <div className="partner-card partner-card--soon">
+              <div className="partner-card__logo-slot">
+                <span className="partner-card__mark partner-card__mark--soon" aria-hidden="true">+</span>
+              </div>
+              <div className="partner-card__top">
+                <h3 className="partner-card__name">More Partners Coming Soon</h3>
+              </div>
+              <p className="partner-card__desc">
+                We&apos;re confirming more organisations and businesses to join MCAW — check back soon.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -85,6 +98,12 @@ export default function PartnersPage() {
           <Link href="/get-involved#partner" className="btn btn-primary">
             Become a partner
           </Link>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="container">
+          <NewsletterSignup variant="card" />
         </div>
       </section>
     </>

@@ -338,6 +338,21 @@ textarea:focus-visible {
   border-radius: 3px;
 }
 .partner-card__desc { font-size: 0.92rem; color: var(--mid-grey); margin: 0; }
+
+/* "More partners coming soon" tile — sits in the grid alongside real partner cards */
+.partner-card--soon {
+  border-style: dashed;
+  border-color: var(--mid-grey);
+  background: transparent;
+  justify-content: center;
+}
+.partner-card__mark--soon {
+  background: transparent;
+  border: 2px dashed var(--mid-grey);
+  color: var(--mid-grey);
+}
+.partner-card--soon .partner-card__name { color: var(--mid-grey); font-size: 1rem; }
+
 .partner-card__link {
   font-family: var(--font-heading);
   font-weight: 700;
