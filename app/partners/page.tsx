@@ -1,14 +1,92 @@
-import ComingSoon from '@/components/ComingSoon'
 import type { Metadata } from 'next'
+import Link from 'next/link'
+import PartnerCard from '@/components/PartnerCard'
 
 export const metadata: Metadata = { title: 'Partners | MCAW' }
 
+type Partner = {
+  name: string
+  role: 'Host' | 'Partner'
+  description: string
+  href?: string
+  logo?: string
+}
+
+// Add new partners here as they're confirmed — each entry becomes a card automatically.
+// Drop a logo into public/images/partners/ and point `logo` at it; until then the
+// card falls back to a lettermark so nothing looks broken.
+const partners: Partner[] = [
+  {
+    name: 'Medicinal Cannabis UK',
+    role: 'Host',
+    description:
+      'The patient-led Community Interest Company coordinating and developing the MCAW campaign, working to improve outcomes for people prescribed cannabis-based medicines across the UK.',
+    href: 'https://mcukcic.co.uk',
+    logo: '/images/partners/medicinal-cannabis-uk.png',
+  },
+  {
+    name: "Ricky's Vaps",
+    role: 'Partner',
+    description:
+      'A UK retailer supporting the MCAW programme and the wider medical cannabis community.',
+    href: 'https://rickysvaps.co.uk',
+    logo: '/images/partners/rickys-vaps.png',
+  },
+  {
+    name: 'Cannabis Trades Association',
+    role: 'Partner',
+    description:
+      'A UK trade association representing businesses across the CBD, hemp and medicinal cannabis sectors.',
+    href: 'https://www.cannabistrades.org',
+    logo: '/images/partners/cannabis-trades-association.png',
+  },
+  {
+    name: 'Medicinal Cannabis Friendly',
+    role: 'Partner',
+    description:
+      'A directory highlighting UK venues and businesses that welcome medical cannabis patients.',
+    href: 'https://www.mcfriendly.co.uk',
+    logo: '/images/partners/medicinal-cannabis-friendly.png',
+  },
+]
+
 export default function PartnersPage() {
   return (
-    <ComingSoon
-      eyebrow="Speakers & Partners"
-      title="Our Partners Page is Coming Soon"
-      message="We're confirming this year's speakers and participating organisations. Check back soon, or sign up to the newsletter to hear as they're announced."
-    />
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <div className="section-label">Speakers &amp; Partners</div>
+          <h1>Our Partners</h1>
+          <p className="hero-sub" style={{ marginBottom: 0 }}>
+            MCAW is brought together by organisations across the UK medical cannabis
+            community — patients, industry, advocacy and healthcare working side by side.
+          </p>
+        </div>
+      </section>
+
+      <div className="seam" />
+
+      <section className="section">
+        <div className="container">
+          <div className="partner-grid">
+            {partners.map((partner) => (
+              <PartnerCard key={partner.name} {...partner} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--cool-grey">
+        <div className="container" style={{ textAlign: 'center' }}>
+          <h2>Want to get involved?</h2>
+          <p style={{ margin: '0 auto 1.5rem', maxWidth: '52ch' }}>
+            We&apos;re always looking to bring more organisations and businesses into MCAW.
+          </p>
+          <Link href="/get-involved#partner" className="btn btn-primary">
+            Become a partner
+          </Link>
+        </div>
+      </section>
+    </>
   )
 }
