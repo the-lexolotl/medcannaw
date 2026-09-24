@@ -23,6 +23,7 @@ export default function Footer() {
           <div className="footer-links">
             <h5>Site</h5>
             <Link href="/about">About</Link>
+            <Link href="/open-campaign">Our statement</Link>
             <Link href="/events">Programme</Link>
             <Link href="/partners">Partners</Link>
             <Link href="/get-involved">Get Involved</Link>

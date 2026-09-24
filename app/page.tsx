@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import CircleField from '@/components/CircleField'
 
@@ -47,6 +48,37 @@ export default function HomePage() {
               <Link href="/about" className="btn btn-secondary" style={{ marginTop: '0.5rem' }}>
                 Read our story
               </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Open campaign statement */}
+      <section className="section section--black" aria-labelledby="open-campaign-heading">
+        <div className="container">
+          <div className="home-feature">
+            <div className="home-feature__body">
+              <span className="eyebrow">Our statement</span>
+              <h2 id="open-campaign-heading" className="home-feature__title">
+                MCAW is for everyone.
+              </h2>
+              <p>
+                MCAW is an open campaign — a shared community initiative with a place for
+                anyone who wants to contribute positively to the conversation. It isn&apos;t
+                about one organisation, one group or one person&apos;s voice.
+              </p>
+              <Link href="/open-campaign" className="btn btn-primary" style={{ marginTop: '0.5rem' }}>
+                Read our statement
+              </Link>
+            </div>
+            <div className="home-feature__media">
+              <Image
+                src="/images/mcaw-history-2020-2021.png"
+                alt="A collage of MCAW campaign graphics from 2020 and 2021, including sessions with Drug Science, the Medical Cannabis Clinicians Society and PLEA."
+                width={1920}
+                height={1080}
+                sizes="(max-width: 860px) 100vw, 600px"
+              />
             </div>
           </div>
         </div>
