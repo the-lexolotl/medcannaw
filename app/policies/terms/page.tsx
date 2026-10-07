@@ -4,14 +4,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms & Conditions',
-  description: 'The terms and conditions governing use of the MCUK website and services.',
+  description: 'The terms and conditions governing use of the MCAW website and services.',
 }
 
 export default function Terms() {
   return (
-    <PolicyPage title="Terms & conditions" lastUpdated="August 2026">
+    <PolicyPage title="Terms & conditions" lastUpdated="7 October 2026">
       <h2>About these terms</h2>
-      <p>These terms and conditions govern your use of the MCUK website (mcukcic.co.uk) and any services provided by Medicinal Cannabis UK CIC, company number 17373828, registered in England and Wales. Our registered address is Union House, 111 New Union Street, Coventry, CV1 2NT.</p>
+      <p>These terms and conditions govern your use of the Medical Cannabis Awareness Week (MCAW) website and any services provided in connection with MCAW. MCAW is organised by a group of organisations; company information for each organiser can be found on their own website.</p>
       <p>By using our website or services, you agree to these terms. If you do not agree, please do not use our website.</p>
 
       <h2>Use of our website</h2>
@@ -21,20 +21,17 @@ export default function Terms() {
       <p>Nothing on this website constitutes medical advice. All content is provided for informational and educational purposes only. You should always consult a qualified healthcare professional before making any decisions about your treatment. For our full medical disclaimer, see our <Link href="/policies/medical-disclaimer">medical disclaimer policy</Link>.</p>
 
       <h2>Content accuracy</h2>
-      <p>We make reasonable efforts to ensure the accuracy of information on our website, but we cannot guarantee it is complete, current, or error-free. We reserve the right to change or remove content at any time without notice. Blog posts and community-submitted content represent the views of individual authors and do not necessarily reflect the views of MCUK.</p>
+      <p>We make reasonable efforts to ensure the accuracy of information on our website, but we cannot guarantee it is complete, current, or error-free. We reserve the right to change or remove content at any time without notice. Content from speakers, contributors and partners represents the views of the individual or organisation concerned and does not necessarily reflect the views of MCAW or its organisers.</p>
 
       <h2>Intellectual property</h2>
-      <p>The MCUK name, logo, and branding are the property of Medicinal Cannabis UK CIC. You must not use our branding without our written permission. Content published on our website by MCUK is licensed under a Creative Commons Attribution-NonCommercial 4.0 International licence unless otherwise stated. You may share and adapt our content for non-commercial purposes with appropriate credit.</p>
-      <p>Content submitted by guest contributors remains the intellectual property of the contributor. By submitting content to MCUK, contributors grant us a non-exclusive licence to publish, edit, and distribute that content on our website and associated channels.</p>
-
-      <h2>Membership</h2>
-      <p>Paid membership subscriptions are processed by Zeffy. By subscribing, you agree to Zeffy's terms of service in addition to these terms. Membership fees are non-refundable except where required by law. You may cancel your membership at any time and it will remain active until the end of the current billing period.</p>
+      <p>The MCAW logo is open for anyone to use in support of the campaign. Use of the logo does not mean a person or organisation is a partner of, or endorsed by, MCAW. Only the organisations listed on our <Link href="/partners">partners page</Link> are endorsed by the campaign. Any other party using the MCAW logo is not endorsed by the campaign and must not suggest otherwise.</p>
+      <p>Content submitted by guest contributors remains the intellectual property of the contributor. By submitting content to MCAW, contributors grant us a non-exclusive licence to publish, edit, and distribute that content on our website and associated channels.</p>
 
       <h2>Links to third-party websites</h2>
       <p>Our website contains links to third-party websites including our social media communities on Facebook, Discord, and YouTube. We are not responsible for the content, privacy practices, or availability of these websites. Links do not constitute endorsement.</p>
 
       <h2>Limitation of liability</h2>
-      <p>To the fullest extent permitted by law, MCUK shall not be liable for any indirect, incidental, or consequential loss or damage arising from your use of our website or services, including but not limited to any decisions made based on content published on our website. Our total liability to you shall not exceed the amount you have paid to us in the 12 months preceding any claim.</p>
+      <p>To the fullest extent permitted by law, MCAW shall not be liable for any indirect, incidental, or consequential loss or damage arising from your use of our website or services, including but not limited to any decisions made based on content published on our website.</p>
 
       <h2>Community conduct</h2>
       <p>Use of our online community spaces is governed by our <Link href="/policies/community-standards">free speech and community standards policy</Link>. Breach of community standards may result in removal from community spaces.</p>

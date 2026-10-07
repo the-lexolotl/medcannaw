@@ -3,15 +3,15 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Cookie Policy',
-  description: 'How MCUK uses cookies and similar technologies on our website.',
+  description: 'How MCAW uses cookies and similar technologies on our website.',
 }
 
 export default function CookiePolicy() {
   return (
-    <PolicyPage title="Cookie policy" lastUpdated="August 2026">
+    <PolicyPage title="Cookie policy" lastUpdated="7 October 2026">
       <h2>What are cookies?</h2>
       <p>Cookies are small text files that are stored on your device when you visit a website. They are widely used to make websites work, or to work more efficiently, and to provide information to the website owner.</p>
-      <p>This policy explains what cookies are used on the MCUK website (mcukcic.co.uk), why we use them, and what your rights are in relation to them.</p>
+      <p>This policy explains what cookies are used on the MCAW website, why we use them, and what your rights are in relation to them.</p>
 
       <h2>Our approach to cookies</h2>
       <p>We have designed our website to be as privacy-friendly as possible. We do not use advertising cookies, tracking pixels, or analytics tools that monitor your behaviour across the web. Our cookie use is minimal and limited to what is necessary for the site to function correctly. Our fonts (DM Sans and Lora) are self-hosted on our own servers and do not make any requests to Google or other third parties.</p>
@@ -26,7 +26,7 @@ export default function CookiePolicy() {
       </ul>
 
       <h3>Third-party cookies</h3>
-      <p>When you click through to make a payment or donation via Zeffy (our payment and membership platform), you will be directed to Zeffy's website where their own cookie and privacy policies apply. We recommend reviewing <a href="https://www.zeffy.com/en-GB/privacy-policy" target="_blank" rel="noopener noreferrer">Zeffy's privacy policy</a> for full details.</p>
+      <p>When you click through to make a payment or donation via Zeffy (our payment platform), you will be directed to Zeffy's website where their own cookie and privacy policies apply. We recommend reviewing <a href="https://www.zeffy.com/en-GB/privacy-policy" target="_blank" rel="noopener noreferrer">Zeffy's privacy policy</a> for full details.</p>
 
       <h2>What we do not use</h2>
       <p>We do not currently use any of the following on our website:</p>

@@ -3,14 +3,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Accessibility Statement',
-  description: "MCUK's commitment to making our website accessible to everyone.",
+  description: "MCAW's commitment to making our website accessible to everyone.",
 }
 
 export default function Accessibility() {
   return (
-    <PolicyPage title="Accessibility statement" lastUpdated="August 2026">
+    <PolicyPage title="Accessibility statement" lastUpdated="7 October 2026">
       <h2>Our commitment</h2>
-      <p>Medicinal Cannabis UK CIC is committed to making our website accessible to everyone, including people with disabilities. Many of our community members live with chronic illness, pain, or neurological conditions that affect how they use technology — accessibility is not an afterthought for us, it is a core part of how we design our services.</p>
+      <p>Medical Cannabis Awareness Week is committed to making our website accessible to everyone, including people with disabilities. Many of our community members live with chronic illness, pain, or neurological conditions that affect how they use technology — accessibility is not an afterthought for us, it is a core part of how we design our services.</p>
       <p>We aim to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA.</p>
 
       <h2>What we have done</h2>

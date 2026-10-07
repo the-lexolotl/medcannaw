@@ -21,9 +21,25 @@ const partners: Partner[] = [
     name: 'Medicinal Cannabis UK',
     role: 'Host',
     description:
-      'The patient-led Community Interest Company coordinating and developing the MCAW campaign, working to improve outcomes for people prescribed cannabis-based medicines across the UK.',
+      'A patient-led Community Interest Company working to improve outcomes for people prescribed cannabis-based medicines across the UK.',
     href: 'https://mcukcic.co.uk',
     logo: '/images/partners/medicinal-cannabis-uk.png',
+  },
+  {
+    name: 'United Patients Alliance',
+    role: 'Host',
+    description:
+      'A leading patient-led organisation advocating for safe, affordable and dignified access to medical cannabis.',
+    href: 'https://www.unitedpatientsalliance.org',
+    logo: '/images/partners/united-patients-alliance.png',
+  },
+  {
+    name: 'The Entourage Effect UK',
+    role: 'Host',
+    description:
+      'A Lanark-based wellness centre and community hub offering CBD, holistic therapies and free support and advice.',
+    href: 'https://theentourageeffectuk.com',
+    logo: '/images/partners/the-entourage-effect-uk.png',
   },
   {
     name: "Ricky's Vaps",
@@ -86,6 +102,12 @@ export default function PartnersPage() {
               </p>
             </div>
           </div>
+
+          <p style={{ margin: '2.5rem auto 0', maxWidth: '60ch', textAlign: 'center', fontSize: '0.85rem', lineHeight: 1.5 }}>
+            <strong>Using the MCAW logo:</strong> the MCAW logo is open for anyone to use in
+            support of the campaign. Only the organisations listed on this page are partners
+            of MCAW. Any other party using the MCAW logo is not endorsed by the campaign.
+          </p>
         </div>
       </section>
 

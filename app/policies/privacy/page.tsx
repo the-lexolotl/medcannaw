@@ -3,14 +3,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'How Medicinal Cannabis UK CIC collects, uses, and protects your personal data.',
+  description: 'How Medicinal Cannabis UK CIC collects, uses, and protects personal data collected through the MCAW website.',
 }
 
 export default function PrivacyPolicy() {
   return (
-    <PolicyPage title="Privacy policy" lastUpdated="3 August 2026">
+    <PolicyPage title="Privacy policy" lastUpdated="7 October 2026">
       <h2>1. Introduction</h2>
-      <p>Medicinal Cannabis UK CIC (MCUK) is committed to protecting and respecting your privacy. This policy explains how we collect, use, store, and protect personal data in line with UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
+      <p>Medical Cannabis Awareness Week (MCAW) is organised by a group of organisations. Personal data collected through the MCAW website and related activities is held by Medicinal Cannabis UK CIC (MCUK CIC), company number 17373828, registered in England and Wales, registered address Union House, 111 New Union Street, Coventry, CV1 2NT. MCUK CIC is the data controller and is committed to protecting and respecting your privacy. This policy explains how we collect, use, store, and protect personal data in line with UK data protection law, including the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</p>
       <p>We recognise that much of the information we handle may be sensitive, particularly given our work supporting patients. We therefore take our responsibilities seriously and aim to handle all personal data lawfully, fairly, and transparently.</p>
 
       <h2>2. Purpose</h2>
@@ -23,10 +23,10 @@ export default function PrivacyPolicy() {
       </ul>
 
       <h2>3. Scope</h2>
-      <p>This policy applies to service users and community members, website visitors and digital platform users, volunteers, staff, and directors, and partners, supporters, and stakeholders. It covers all personal data processed by MCUK, whether collected online, in person, or through third parties.</p>
+      <p>This policy applies to service users and community members, website visitors and digital platform users, volunteers, staff, and organisers, and partners, supporters, and stakeholders. It covers all personal data processed by MCUK CIC on behalf of MCAW, whether collected online, in person, or through third parties.</p>
 
       <h2>4. Data Protection Principles</h2>
-      <p>MCUK will ensure that personal data is:</p>
+      <p>MCUK CIC will ensure that personal data is:</p>
       <ul>
         <li>Processed lawfully, fairly, and transparently</li>
         <li>Collected for specified, explicit, and legitimate purposes</li>
@@ -52,12 +52,12 @@ export default function PrivacyPolicy() {
       <p>We will only process personal data where we have a lawful basis to do so, including consent, legitimate interests, legal obligation, or performance of a contract.</p>
 
       <h2>7. Sharing Personal Data</h2>
-      <p>MCUK does not sell personal data. We may share data where necessary with service providers (e.g. IT, hosting, or communication platforms), professional advisers (e.g. legal or financial), and regulators or authorities where required by law.</p>
-      <p>MCUK may use carefully selected third-party service providers to deliver its services. These organisations are only given access to personal data where necessary and are required to protect it appropriately and process it in accordance with data protection law.</p>
+      <p>MCUK CIC does not sell personal data. We may share data where necessary with service providers (e.g. IT, hosting, or communication platforms), professional advisers (e.g. legal or financial), and regulators or authorities where required by law.</p>
+      <p>MCUK CIC may use carefully selected third-party service providers to deliver its services. These organisations are only given access to personal data where necessary and are required to protect it appropriately and process it in accordance with data protection law.</p>
 
       <h2>8. Data Security</h2>
-      <p>MCUK takes appropriate measures to protect personal data, including secure systems and access controls, limiting access to authorised individuals only, use of secure platforms and encryption where appropriate, and regular review of data handling practices.</p>
-      <p>Everyone working on behalf of MCUK is expected to maintain the confidentiality of personal information and only access data where necessary for their role.</p>
+      <p>MCUK CIC takes appropriate measures to protect personal data, including secure systems and access controls, limiting access to authorised individuals only, use of secure platforms and encryption where appropriate, and regular review of data handling practices.</p>
+      <p>Everyone working on behalf of MCUK CIC or MCAW is expected to maintain the confidentiality of personal information and only access data where necessary for their role.</p>
 
       <h2>9. Data Retention</h2>
       <p>We will only retain personal data for as long as necessary to fulfil the purposes for which it was collected, including legal, accounting, or reporting requirements. Retention periods will vary depending on the type of data and its purpose. Once personal data is no longer required, it will be securely deleted or anonymised.</p>
@@ -70,16 +70,16 @@ export default function PrivacyPolicy() {
       <p>Our website may use cookies or similar technologies to improve user experience and understand how our services are used. Where required, users will be given clear information and choices about cookie usage. For full details, see our <a href="/policies/cookies">cookie policy</a>.</p>
 
       <h2>12. Breaches</h2>
-      <p>In the event of a personal data breach, MCUK will assess the risk to individuals, take appropriate steps to contain and resolve the issue, notify the Information Commissioner's Office (ICO) where required, and inform affected individuals where there is a high risk to their rights and freedoms.</p>
+      <p>In the event of a personal data breach, MCUK CIC will assess the risk to individuals, take appropriate steps to contain and resolve the issue, notify the Information Commissioner's Office (ICO) where required, and inform affected individuals where there is a high risk to their rights and freedoms.</p>
 
       <h2>13. Responsibility</h2>
-      <p>The Board of Directors has overall responsibility for ensuring that MCUK complies with data protection legislation. Day-to-day responsibility for implementing this policy rests with those handling personal data as part of their role. All staff and volunteers are responsible for handling personal data in line with this policy and reporting any concerns or breaches promptly.</p>
+      <p>The Board of Directors of MCUK CIC has overall responsibility for ensuring that MCUK CIC complies with data protection legislation. Day-to-day responsibility for implementing this policy rests with those handling personal data as part of their role. All staff and volunteers are responsible for handling personal data in line with this policy and reporting any concerns or breaches promptly.</p>
 
       <h2>14. Review</h2>
       <p>This policy will be reviewed at least annually, or sooner following significant organisational changes, legislative changes, or a data protection incident.</p>
 
       <h2>15. Contact</h2>
-      <p>If you have any questions about this policy or how your data is handled, please contact Medicinal Cannabis UK CIC at <a href="mailto:hello@mcukcic.co.uk">hello@mcukcic.co.uk</a>.</p>
+      <p>If you have any questions about this policy or how your data is handled, please contact us at <a href="mailto:hello@mcukcic.co.uk">hello@mcukcic.co.uk</a>, or write to Medicinal Cannabis UK CIC (MCUK CIC), Union House, 111 New Union Street, Coventry, CV1 2NT.</p>
       <p>If you are dissatisfied with how we have handled your personal data, you have the right to lodge a complaint with the Information Commissioner's Office (ICO). We encourage you to contact us first so that we have the opportunity to resolve your concerns.</p>
     </PolicyPage>
   )

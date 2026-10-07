@@ -108,29 +108,28 @@ export default function AboutPage() {
       <section className="section section--cool-grey">
         <div className="container">
           <div className="editorial">
-            <div className="editorial__label">The role of MCUK</div>
+            <div className="editorial__label">Who organises MCAW</div>
             <div className="editorial__body">
               <p>
-                As MCAW develops, Medical Cannabis UK (MCUK) is taking responsibility for
-                coordinating and developing the campaign. MCUK is a patient-led Community
-                Interest Company working to improve outcomes for people prescribed
-                Cannabis Based Prescription Medicines (CBPMs) across the UK, and we believe
-                MCAW is closely aligned with that mission.
+                MCAW is organised and hosted by a group of organisations working together,
+                rather than by any single company or charity. Each organiser contributes its
+                time, expertise and community to coordinating the annual campaign and
+                developing its programme.
               </p>
               <p style={{ color: 'var(--mid-grey)' }}>
-                Our intention is not to make MCAW exclusively an MCUK campaign. Instead, we
-                want to provide the structure, continuity and resources needed for it to
-                grow while keeping collaboration at its core — coordinating the annual
-                campaign, developing its programme, supporting participating organisations
-                and contributors, and ensuring MCAW remains accessible to the wider
-                community.
+                Our intention is for MCAW to keep collaboration at its core — providing the
+                structure, continuity and shared resources it needs to grow, supporting
+                participating organisations and contributors, and ensuring MCAW remains
+                accessible to the wider community. Company information for each organiser
+                can be found on their own website, linked from our{' '}
+                <Link href="/partners">partners page</Link>.
               </p>
             </div>
           </div>
 
           <p className="pull-quote">
-            MCAW belongs to the community. MCUK&apos;s role is to help bring that community
-            together.
+            MCAW belongs to the community. Our role as organisers is to help bring that
+            community together.
           </p>
         </div>
       </section>

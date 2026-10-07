@@ -172,7 +172,7 @@ export default function NewsletterSignup({ variant = 'card' }) {
           </button>
 
           <p style={{ fontSize: '0.78rem', color: '#3a3a3a', fontFamily: 'var(--font-body)', lineHeight: 1.5 }}>
-            By subscribing, you agree to receive emails from MCUK. You can unsubscribe at any time.
+            By subscribing, you agree to receive emails from Medical Cannabis Awareness Week. You can unsubscribe at any time.
             We handle your data in accordance with our{' '}
             <a href="/policies/privacy" style={{ color: '#000', fontWeight: 700 }}>Privacy Policy</a>.
           </p>

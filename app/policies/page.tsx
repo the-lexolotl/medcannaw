@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 const policies = [
   { href: '/policies/cookies', title: 'Cookie policy', desc: 'How we use cookies and similar technologies on our website.' },
   { href: '/policies/privacy', title: 'Privacy policy', desc: 'How we collect, use, and protect your personal data.' },
-  { href: '/policies/terms', title: 'Terms & conditions', desc: 'The terms governing your use of the MCUK website and services.' },
+  { href: '/policies/terms', title: 'Terms & conditions', desc: 'The terms governing your use of the MCAW website and services.' },
   { href: '/policies/complaints', title: 'Complaints policy', desc: 'How to raise a complaint and what to expect from us.' },
-  { href: '/policies/community-standards', title: 'Free speech & community standards', desc: 'How MCUK approaches freedom of expression and community moderation.' },
-  { href: '/policies/social-media', title: 'Social media policy', desc: 'Standards for social media use by those representing MCUK online.' },
+  { href: '/policies/community-standards', title: 'Free speech & community standards', desc: 'How MCAW approaches freedom of expression and community moderation.' },
+  { href: '/policies/social-media', title: 'Social media policy', desc: 'Standards for social media use by those representing MCAW online.' },
   { href: '/policies/safeguarding', title: 'Safeguarding policy', desc: 'Our commitment to the safety and wellbeing of vulnerable people.' },
   { href: '/policies/medical-disclaimer', title: 'Medical disclaimer', desc: 'Important information about the nature of content on this site.' },
-  { href: '/policies/editorial', title: 'Editorial policy', desc: 'How we review, edit, and publish content on the MCUK blog.' },
+  { href: '/policies/editorial', title: 'Editorial policy', desc: 'How we review, edit, and publish content on the MCAW website.' },
   { href: '/policies/accessibility', title: 'Accessibility statement', desc: 'Our commitment to making this site accessible to everyone.' },
   { href: '/policies/data-retention', title: 'Data retention policy', desc: 'How long we keep your data and when we delete it.' },
 ]
@@ -52,8 +52,8 @@ export default function Policies() {
         <section className="section section-tinted">
           <div className="container content-narrow">
             <div className="info-box">
-              <p><strong>Medical Cannabis Awareness Week</strong> is an event organised and ran by <strong>Medicinal Cannabis UK CIC</strong></p>
-              <p><strong>Medicinal Cannabis UK CIC</strong> is registered in England and Wales, company number 17373828. Registered address: Union House, 111 New Union Street, Coventry, CV1 2NT. For any questions about our policies, please <Link href="/contact">get in touch</Link>.</p>
+              <p><strong>Medical Cannabis Awareness Week</strong> is an event organised by a group of organisations working together.</p>
+              <p>Relevant company information, including registration details, can be found on each organiser&apos;s own website. For any questions about our policies, please <Link href="/contact">get in touch</Link>.</p>
             </div>
           </div>
         </section>

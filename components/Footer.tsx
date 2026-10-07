@@ -17,7 +17,7 @@ export default function Footer() {
             />
             <p><strong>Together for Patients. </strong></p>
             <p>A UK-wide awareness, education and community campaign for prescribed cannabis-based medicines.</p>
-            <p className="footer-note">Registered in England and Wales</p>
+            <p className="footer-note">Organised collaboratively by our <Link href="/partners">partner organisations</Link></p>
           </div>
 
           <div className="footer-links">
@@ -55,7 +55,7 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p>MCAW does not provide medical advice. Always consult your prescribing clinician.</p>
-          <p>&copy; {new Date().getFullYear()} Medical Cannabis Awareness Week</p>
+          <p>Medical Cannabis Awareness Week is organised by a group of organisations. Company information can be found on each organiser&apos;s own website.</p>
         </div>
       </div>
     </footer>

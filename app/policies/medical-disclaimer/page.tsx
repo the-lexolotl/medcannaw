@@ -4,14 +4,14 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Medical Disclaimer',
-  description: 'Important information about the nature of content on the MCUK website.',
+  description: 'Important information about the nature of content on the MCAW website.',
 }
 
 export default function MedicalDisclaimer() {
   return (
-    <PolicyPage title="Medical disclaimer" lastUpdated="August 2026">
+    <PolicyPage title="Medical disclaimer" lastUpdated="7 October 2026">
       <h2>Important notice</h2>
-      <p>The content published on the MCUK website (mcukcic.co.uk), including all resource guides, blog posts, FAQ answers, and community discussions, is provided for informational and educational purposes only.</p>
+      <p>The content published on the MCAW website, including all resource guides, FAQ answers, and community discussions, is provided for informational and educational purposes only.</p>
       <p><strong>Nothing on this website constitutes medical advice, diagnosis, or treatment.</strong></p>
 
       <h2>Always consult a clinician</h2>
@@ -27,10 +27,10 @@ export default function MedicalDisclaimer() {
       <p>If you are experiencing a medical emergency, call 999 immediately. If you are in mental health crisis, contact Samaritans on 116 123 (free, 24/7) or text SHOUT to 85258.</p>
 
       <h2>No professional relationship</h2>
-      <p>Using this website or engaging with MCUK's services does not create a patient-clinician relationship between you and MCUK or any of its staff, volunteers, or contributors.</p>
+      <p>Using this website or engaging with MCAW's services does not create a patient-clinician relationship between you and MCAW or any of its staff, volunteers, or contributors.</p>
 
       <h2>Limitation of liability</h2>
-      <p>MCUK accepts no liability for any loss, harm, or damage arising from reliance on the information published on this website. See our <Link href="/policies/terms">terms and conditions</Link> for full details.</p>
+      <p>MCAW accepts no liability for any loss, harm, or damage arising from reliance on the information published on this website. See our <Link href="/policies/terms">terms and conditions</Link> for full details.</p>
     </PolicyPage>
   )
 }

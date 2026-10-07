@@ -253,23 +253,23 @@ export default function Contact() {
               <h4>Contact details</h4>
               <div className="contact-detail">
                 <div className="contact-detail-label">General enquiries</div>
-                <a href="mailto:hello@mcaw.org.uk">hello@mcuk.co.uk</a>
+                <a href="mailto:hello@mcukcic.co.uk">hello@mcukcic.co.uk</a>
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-label">Patient support</div>
-                <a href="mailto:support@mcaw.org.uk">support@mcuk.co.uk</a>
+                <a href="mailto:support@mcukcic.co.uk">support@mcukcic.co.uk</a>
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-label">Media enquiries</div>
-                <a href="mailto:press@mcaw.org.uk">press@mcuk.co.uk</a>
+                <a href="mailto:press@mcukcic.co.uk">press@mcukcic.co.uk</a>
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-label">Partnerships</div>
-                <a href="mailto:partners@mcaw.org.uk">partners@mcuk.co.uk</a>
+                <a href="mailto:partners@mcukcic.co.uk">partners@mcukcic.co.uk</a>
               </div>
               <div className="contact-detail">
                 <div className="contact-detail-label">Volunteering</div>
-                <a href="mailto:volunteer@mcaw.org.uk">volunteer@mcuk.co.uk</a>
+                <a href="mailto:volunteer@mcukcic.co.uk">volunteer@mcukcic.co.uk</a>
               </div>
             </div>
 
@@ -293,7 +293,7 @@ export default function Contact() {
               <h4>Response times</h4>
               <p>
                 We aim to respond to all enquiries within <strong>3 working days</strong>.
-                For urgent patient support matters, MCUK&apos;s community channels can often
+                For urgent patient support matters, the community channels of our partner organisations can often
                 help sooner.
               </p>
               <p style={{ marginTop: '0.75rem', fontSize: '0.8rem' }}>
