@@ -56,7 +56,6 @@ export type ProgrammeEvent = {
   statusNote?: string
 }
 
-const MCUK_NOTE = 'Online webinar — booking link coming soon'
 const UPA_NOTE = 'Platform and booking details to be confirmed'
 
 export const events: ProgrammeEvent[] = [
@@ -115,7 +114,7 @@ export const events: ProgrammeEvent[] = [
       'There will also be an opportunity to ask questions, share your thoughts and take part in the discussion.',
       'Whether you are a patient, carer, healthcare professional, organisation, industry representative or simply interested in learning more, everyone is welcome.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/1999946500821?aff=oddtdtcreator',
   },
   {
     id: 'upa-the-clinics',
@@ -161,7 +160,7 @@ export const events: ProgrammeEvent[] = [
       'Lived experience is an important part of understanding where the UK CBPM sector is today and where improvements are still needed.',
       'Join us to listen, learn and discuss the experiences of patients across the community.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003079035316?aff=oddtdtcreator',
   },
   {
     id: 'upa-the-doctors',
@@ -206,7 +205,7 @@ export const events: ProgrammeEvent[] = [
       'We’ll look at the science in an accessible way, helping patients and members of the wider community better understand the medicines they may encounter as part of CBPM treatment.',
       'The session is an opportunity to learn, ask questions and explore what the evidence currently tells us — as well as where further research is still needed.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003079093490?aff=oddtdtcreator',
   },
   {
     id: 'upa-global-activism-day',
@@ -252,7 +251,7 @@ export const events: ProgrammeEvent[] = [
       'The session will provide an opportunity to learn more about the technology involved, ask questions and better understand the considerations around using devices with prescribed CBPMs.',
       'This session is intended as an educational discussion for patients and the wider community.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003079169718?aff=oddtdtcreator',
   },
   {
     id: 'mcuk-living-as-a-patient',
@@ -272,7 +271,7 @@ export const events: ProgrammeEvent[] = [
       'We’ll explore the realities of the patient journey and the challenges that can exist beyond the consultation room.',
       'Join us for an open discussion focused on patient experience, access and the things that matter in everyday life.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003692617557?aff=oddtdtcreator',
   },
   {
     id: 'upa-the-upa-story',
@@ -316,7 +315,7 @@ export const events: ProgrammeEvent[] = [
       'What can different parts of the community contribute? Where are the opportunities for collaboration? And how can we make sure patients remain at the centre of what we do?',
       'Join us for an open conversation about the community and the importance of working together.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003692739923?aff=oddtdtcreator',
   },
   {
     id: 'upa-grow-your-own',
@@ -359,7 +358,7 @@ export const events: ProgrammeEvent[] = [
       'Discussion will include developments in treatment, research, access and the wider patient movement, as well as some of the opportunities and challenges that could shape the years ahead.',
       'The future of CBPM treatment will affect patients, healthcare professionals, organisations and the wider sector — so this is an opportunity to consider what that future could look like and what we want to see from it.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003692810133?aff=oddtdtcreator',
   },
   {
     id: 'upa-future-of-the-campaign',
@@ -406,7 +405,7 @@ export const events: ProgrammeEvent[] = [
       'We’ll also take some time to reflect on the discussions and conversations from across the week before looking ahead to what comes next for MCAW and what we hope to be doing next year.',
       'Thank you for being part of Medical Cannabis Awareness Week 2026 — we hope you’ll join us for the final conversation.',
     ],
-    statusNote: MCUK_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/2003692835208?aff=oddtdtcreator',
   },
 ]
 
