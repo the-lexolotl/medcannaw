@@ -2,7 +2,11 @@
 
 import { useState } from 'react';
 
-export default function NewsletterSignup({ variant = 'card' }) {
+export default function NewsletterSignup({
+  variant = 'card',
+  heading = 'Stay in the loop',
+  intro = 'Get updates on programme announcements, patient stories and campaign news — straight to your inbox.',
+}) {
   const [email, setEmail] = useState('');
   const [firstName, setFirstName] = useState('');
   const [status, setStatus] = useState('idle'); // idle | loading | success | error
@@ -119,10 +123,10 @@ export default function NewsletterSignup({ variant = 'card' }) {
       margin: '0 auto',
     }}>
       <h2 style={{ fontFamily: 'var(--font-heading)', color: '#000', fontSize: '1.6rem', fontWeight: 700, marginBottom: '0.5rem' }}>
-        Stay in the loop
+        {heading}
       </h2>
       <p style={{ fontFamily: 'var(--font-body)', color: '#000', marginBottom: '1.5rem', lineHeight: 1.6 }}>
-        Get updates on programme announcements, patient stories and campaign news — straight to your inbox.
+        {intro}
       </p>
 
       {status === 'success' ? (

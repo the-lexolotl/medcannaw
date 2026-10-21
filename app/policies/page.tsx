@@ -10,6 +10,7 @@ const policies = [
   { href: '/policies/cookies', title: 'Cookie policy', desc: 'How we use cookies and similar technologies on our website.' },
   { href: '/policies/privacy', title: 'Privacy policy', desc: 'How we collect, use, and protect your personal data.' },
   { href: '/policies/terms', title: 'Terms & conditions', desc: 'The terms governing your use of the MCAW website and services.' },
+  { href: '/policies/raffle-terms', title: 'Raffle terms & conditions', desc: 'The terms for the MCAW 2026 Prize Raffle, including eligibility, the draw and prizes.' },
   { href: '/policies/complaints', title: 'Complaints policy', desc: 'How to raise a complaint and what to expect from us.' },
   { href: '/policies/community-standards', title: 'Free speech & community standards', desc: 'How MCAW approaches freedom of expression and community moderation.' },
   { href: '/policies/social-media', title: 'Social media policy', desc: 'Standards for social media use by those representing MCAW online.' },

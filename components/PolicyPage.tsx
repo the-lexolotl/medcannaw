@@ -9,8 +9,8 @@ interface PolicyPageProps {
 export default function PolicyPage({ title, lastUpdated, children }: PolicyPageProps) {
   return (
     <section className="section">
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 300px', gap: '3rem' }}>
-        <div>
+      <div className="container policy-layout">
+        <div className="policy-layout__main">
           <Link href="/policies">&larr; Back to policies</Link>
           <p style={{ color: 'var(--mid-grey)', fontSize: '0.9rem', marginTop: '1.5rem' }}>
             Last updated: {lastUpdated}
@@ -26,6 +26,7 @@ export default function PolicyPage({ title, lastUpdated, children }: PolicyPageP
               <li><Link href="/policies/cookies">Cookie policy &rarr;</Link></li>
               <li><Link href="/policies/privacy">Privacy policy &rarr;</Link></li>
               <li><Link href="/policies/terms">Terms &amp; conditions &rarr;</Link></li>
+              <li><Link href="/policies/raffle-terms">Raffle terms &amp; conditions &rarr;</Link></li>
               <li><Link href="/policies/complaints">Complaints procedure &rarr;</Link></li>
               <li><Link href="/policies/safeguarding">Safeguarding policy &rarr;</Link></li>
             </ul>

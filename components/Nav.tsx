@@ -4,9 +4,12 @@ import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 
-const links = [
+type NavLink = { href: string; label: string; highlight?: boolean }
+
+const links: NavLink[] = [
   { href: '/about', label: 'About' },
   { href: '/events', label: 'Programme' },
+  { href: '/raffle', label: 'Raffle', highlight: true },
   { href: '/partners', label: 'Partners' },
   { href: '/get-involved', label: 'Get Involved' },
   { href: '/contact', label: 'Contact' },
@@ -34,7 +37,12 @@ export default function Nav() {
           className={`site-nav__links ${open ? 'is-open' : ''}`}
         >
           {links.map((link) => (
-            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link
+              key={link.href}
+              href={link.href}
+              className={link.highlight ? 'site-nav__link--highlight' : undefined}
+              onClick={() => setOpen(false)}
+            >
               {link.label}
             </Link>
           ))}
