@@ -1,12 +1,14 @@
 // MCAW 2026 programme data.
 // Add or edit events here — the Programme page groups them by date automatically.
 // `bookingHref` is optional: until it is set the card shows "Booking link coming soon".
+// `logo` is optional on a host: without one, the card shows a lettermark placeholder.
 
-export type HostId = 'mcuk' | 'upa' | 'eeuk'
+export type HostId = 'mcuk' | 'upa' | 'pcuk'
 
 export type Host = {
   name: string
-  logo: string
+  /** Path to a logo in public/images/partners/. Leave undefined to show a placeholder. */
+  logo?: string
   href: string
 }
 
@@ -21,10 +23,11 @@ export const hosts: Record<HostId, Host> = {
     logo: '/images/partners/united-patients-alliance.png',
     href: 'https://www.unitedpatientsalliance.org',
   },
-  eeuk: {
-    name: 'The Entourage Effect UK',
-    logo: '/images/partners/the-entourage-effect-uk.png',
-    href: 'https://theentourageeffectuk.com',
+  pcuk: {
+    name: 'PatientsCann UK',
+    // Logo to follow — drop it into public/images/partners/patientscann-uk.png and add:
+    // logo: '/images/partners/patientscann-uk.png',
+    href: 'https://patientscann.org.uk',
   },
 }
 
@@ -39,8 +42,12 @@ export type ProgrammeEvent = {
   startMinutes?: number
   /** Short format label shown as the card tag, e.g. "Online webinar" */
   format: string
-  /** Where it takes place, if known */
+  /** Where it takes place, if known — shown in the meta line next to the time */
   location?: string
+  /** Full street address for in-person events, shown with an "Open in maps" link */
+  address?: string
+  /** Map link for the address */
+  mapHref?: string
   title: string
   subtitle?: string
   summary: string
@@ -52,25 +59,38 @@ export type ProgrammeEvent = {
   /** Optional closing paragraphs shown after the topics */
   afterTopics?: string[]
   bookingHref?: string
+  /** Button text for bookingHref. Defaults to "Book on Eventbrite". */
+  ctaLabel?: string
   /** Shown instead of a booking button, e.g. "Time and platform to be confirmed" */
   statusNote?: string
 }
 
 const UPA_NOTE = 'Platform and booking details to be confirmed'
+const PCUK_NOTE = 'Come along to meet us and other patients.'
+
+const maps = (address: string) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`
 
 export const events: ProgrammeEvent[] = [
   // ───────────── Sunday 1 November ─────────────
   {
-    id: 'eeuk-patient-get-together',
-    host: 'eeuk',
+    id: 'pcuk-standlake-classic-mini',
+    host: 'pcuk',
     date: '2026-11-01',
-    format: 'Onsite & online',
-    location: 'Onsite & online',
-    title: 'Patient Get-Together',
-    subtitle: 'Patient lounges & holistic health',
+    time: '11:00am until late UK time',
+    startMinutes: 11 * 60,
+    format: 'Motorsport meet-up',
+    location: 'Witney, Oxfordshire',
+    address: 'Standlake Arena, A415, Witney, OX29 7PR',
+    mapHref: maps('Standlake Arena, A415, Witney OX29 7PR'),
+    title: 'Standlake Arena: our #8 Classic Mini',
     summary:
-      'A patient get-together featuring patient lounges, a look at the lounge and the role it plays, and a discussion on holistic health.',
-    statusNote: 'More details to be confirmed',
+      'On the eighth anniversary of medical cannabis becoming legal in the UK, the PatientsCann UK® Motorsports Team races our #8 Classic Mini for the first time.',
+    description: [
+      'We are in the non-contact Prod A class. We will talk with spectators and drivers, and show that medical cannabis patients can take part in motorsport. The meeting ends with a Big Bang firework display.',
+      'Racing starts at 11:00. Gate prices: adults £20, concessions £15, children (10 to 16) £15, under 10s free, family (2 adults, 2 children) £55. Cheaper late entry after 4pm.',
+    ],
+    statusNote: 'Come along to cheer on the team and say hello at our car.',
   },
   {
     id: 'upa-patient-stories',
@@ -98,6 +118,21 @@ export const events: ProgrammeEvent[] = [
   },
 
   // ───────────── Monday 2 November ─────────────
+  {
+    id: 'pcuk-burn-pit-lounge',
+    host: 'pcuk',
+    date: '2026-11-02',
+    time: '1:00pm–5:00pm UK time',
+    startMinutes: 13 * 60,
+    format: 'Patient meet-up',
+    location: 'Derry',
+    address: '2 London Street, Derry, BT48 6RQ',
+    mapHref: maps('2 London Street, Derry, BT48 6RQ'),
+    title: 'The Burn Pit Lounge',
+    summary:
+      'We will visit The Burn Pit Lounge, a patient space in Derry. It is a chance to meet patients in Northern Ireland, listen to their experiences, share useful information and build links across the community.',
+    statusNote: PCUK_NOTE,
+  },
   {
     id: 'mcuk-together-for-patients',
     host: 'mcuk',
@@ -145,6 +180,22 @@ export const events: ProgrammeEvent[] = [
   },
 
   // ───────────── Tuesday 3 November ─────────────
+  {
+    id: 'pcuk-chongyz-lounge',
+    host: 'pcuk',
+    date: '2026-11-03',
+    time: '2:00pm until late UK time',
+    startMinutes: 14 * 60,
+    format: 'Patient social',
+    location: 'Liverpool',
+    address: '35 Renshaw Street, Liverpool, L1 2SF',
+    mapHref: maps('35 Renshaw Street, Liverpool, L1 2SF'),
+    title: 'Patient social at Chongyz Lounge',
+    summary:
+      'Patients can meet each other, swap experiences and relax in a supportive space, without having to hide or apologise for their prescribed medicine.',
+    description: ['Lounge entry is £5. Please bring proof of prescription and ID.'],
+    statusNote: PCUK_NOTE,
+  },
   {
     id: 'mcuk-patient-voices',
     host: 'mcuk',
@@ -242,6 +293,22 @@ export const events: ProgrammeEvent[] = [
 
   // ───────────── Thursday 5 November ─────────────
   {
+    id: 'pcuk-awareness-pop-up',
+    host: 'pcuk',
+    date: '2026-11-05',
+    format: 'Public pop-up',
+    location: 'Place chosen by you',
+    title: 'You choose our awareness pop-up',
+    summary:
+      'Fill in our short form and help pick where the PatientsCann UK® team holds a public pop-up. It is a chance to take the conversation beyond patient spaces and talk directly with the public.',
+    description: [
+      'Once the result is in, we will share the place, meeting point and access information.',
+      'Fill in the form, share it, and come and see us on the day.',
+    ],
+    bookingHref: 'https://forms.gle/UWESYJEHGFNzpWS87',
+    ctaLabel: 'Choose the place',
+  },
+  {
     id: 'mcuk-vapourisers',
     host: 'mcuk',
     date: '2026-11-05',
@@ -308,6 +375,24 @@ export const events: ProgrammeEvent[] = [
 
   // ───────────── Friday 6 November ─────────────
   {
+    id: 'pcuk-cosmic-tree',
+    host: 'pcuk',
+    date: '2026-11-06',
+    time: '2:00pm–6:00pm UK time',
+    startMinutes: 14 * 60,
+    format: 'Patient meet-up + terpene analysis',
+    location: 'Gloucester',
+    address: '84 Westgate Street, Gloucester, GL1 2NZ',
+    mapHref: maps('84 Westgate Street, Gloucester, GL1 2NZ'),
+    title: 'Cosmic Tree',
+    summary:
+      'An afternoon at Cosmic Tree. Another chance to meet patients, share practical information, hear about local experiences and create a supportive community feel.',
+    description: [
+      'KAST (KA Aromatic Sensory Translation) will join us to carry out terpene analysis for patients. They will test your medicine, give you a terpene breakdown and explain how to understand your medicine better.',
+    ],
+    statusNote: PCUK_NOTE,
+  },
+  {
     id: 'mcuk-the-community',
     host: 'mcuk',
     date: '2026-11-06',
@@ -353,6 +438,35 @@ export const events: ProgrammeEvent[] = [
   },
 
   // ───────────── Saturday 7 November ─────────────
+  {
+    id: 'pcuk-downing-street',
+    host: 'pcuk',
+    date: '2026-11-07',
+    time: '1:30pm–6:00pm UK time',
+    startMinutes: 13 * 60 + 30,
+    format: 'Awareness action',
+    location: 'London',
+    address: '10 Downing Street, London, SW1A 2AA',
+    mapHref: maps('10 Downing Street, London, SW1A 2AA'),
+    title: 'No. 10 Downing Street awareness action',
+    summary:
+      'We finish the week at No. 10 Downing Street in London, the home and office of the Prime Minister, taking the patient message to the heart of government.',
+    description: [
+      'This will be a peaceful, visible awareness action. Medical cannabis has been legal to prescribe for eight years, yet patients still face stigma, misunderstanding and barriers in everyday life.',
+      'Alongside the action, PatientsCann UK has written an open letter to the Prime Minister asking them to stand with prescribed medical cannabis patients and tackle the stigma and discrimination they face at work, at home and in public. Everyone who signs will have their name handed in to 10 Downing Street on Saturday 7 November.',
+    ],
+    topicsLabel: 'On the day',
+    topics: [
+      '1:30pm: petition hand-in (confirmed)',
+      '2:00pm to 6:00pm: planned static protest',
+    ],
+    afterTopics: [
+      'The meeting point will be shared before the day.',
+      'Come and stand with patients, or share the action online if you cannot be there.',
+    ],
+    bookingHref: 'https://patientscann.org.uk/sign-the-letter-no10/',
+    ctaLabel: 'Sign the letter to No. 10',
+  },
   {
     id: 'mcuk-the-future',
     host: 'mcuk',

@@ -1036,6 +1036,19 @@ textarea:focus-visible {
 .event-card .event-card__meta { color: var(--mcaw-black); margin: 0; }
 .event-card__sub { font-family: var(--font-heading); font-weight: 700; font-size: 1rem; margin: 0; }
 .event-card__summary { margin: 0; }
+.event-card__address {
+  margin: 0;
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+}
+.event-card__map-link {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 2px solid var(--mcaw-lime);
+}
 
 .event-card__host {
   display: flex;
@@ -1049,6 +1062,18 @@ textarea:focus-visible {
   height: 56px;
   object-fit: contain;
   flex-shrink: 0;
+}
+/* Lettermark shown when a host has no logo yet */
+.event-card__host-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  background: var(--mcaw-black);
+  color: var(--mcaw-lime);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
 }
 .event-card__host-text { display: flex; flex-direction: column; line-height: 1.25; }
 .event-card__host-label {

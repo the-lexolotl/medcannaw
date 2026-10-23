@@ -34,12 +34,12 @@ const partners: Partner[] = [
     logo: '/images/partners/united-patients-alliance.png',
   },
   {
-    name: 'The Entourage Effect UK',
+    name: 'PatientsCann UK',
     role: 'Host',
     description:
-      'A Lanark-based wellness centre and community hub offering CBD, holistic therapies and free support and advice.',
-    href: 'https://theentourageeffectuk.com',
-    logo: '/images/partners/the-entourage-effect-uk.png',
+      'A patient-led advocacy group offering free guidance, tools and community support to medical cannabis patients across the UK.',
+    href: 'https://patientscann.org.uk',
+    // Logo to follow — the card shows a lettermark until it is added.
   },
   {
     name: "Ricky's Vaps",
