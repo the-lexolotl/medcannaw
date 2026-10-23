@@ -4,17 +4,22 @@ import PrizeCard from '@/components/PrizeCard'
 import NewsletterSignup from '@/components/NewsletterSignup'
 import CircleField from '@/components/CircleField'
 import {
-  rafflePrizes,
+  visibleRafflePrizes,
   raffleOrganiser,
   getRafflePhase,
   totalPrizeCount,
+  totalRaffleCount,
+  numberToWords,
   type RafflePhase,
 } from './raffle-data'
+
+const raffleWord = numberToWords(totalRaffleCount)
+const RaffleWord = raffleWord.charAt(0).toUpperCase() + raffleWord.slice(1)
 
 export const metadata: Metadata = {
   title: 'Prize Raffle | MCAW',
   description:
-    'The MCAW 2026 Prize Raffle: six raffles, ten donated prizes, tickets from £1. Newsletter subscribers get first access from 26 October. Draw on 8 November 2026 at 9pm.',
+    `The MCAW 2026 Prize Raffle: ${raffleWord} raffles, ${numberToWords(totalPrizeCount)} donated prizes, tickets from £1. Newsletter subscribers get first access from 26 October. Draw on 8 November 2026 at 9pm.`,
 }
 
 // Re-check the date every minute so the page moves through early access, general sale and close on its own.
@@ -35,7 +40,7 @@ const heroStatus: Record<RafflePhase, { label: string; text: string }> = {
   },
   closed: {
     label: 'Entries closed',
-    text: 'Thank you to everyone who entered. All six raffles will be drawn at 9pm tonight.',
+    text: `Thank you to everyone who entered. All ${raffleWord} raffles will be drawn at 9pm tonight.`,
   },
   drawn: {
     label: 'Raffles drawn',
@@ -64,7 +69,7 @@ export default function RafflePage() {
           <span className="eyebrow">MCAW 2026 Prize Raffle</span>
           <h1 className="display">Win a prize. Back the campaign.</h1>
           <p className="raffle-hero__intro">
-            Six raffles, {totalPrizeCount} donated prizes, tickets from £1. Every ticket helps
+            {RaffleWord} raffles, {totalPrizeCount} donated prizes, tickets from £1. Every ticket helps
             {' '}{raffleOrganiser.society} keep supporting patients, during MCAW and all year round.
           </p>
 
@@ -124,7 +129,7 @@ export default function RafflePage() {
           </div>
 
           <div className="prize-grid">
-            {rafflePrizes.map((prize) => (
+            {visibleRafflePrizes.map((prize) => (
               <PrizeCard key={prize.id} prize={prize} phase={phase} />
             ))}
           </div>

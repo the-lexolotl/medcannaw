@@ -15,6 +15,7 @@ export type RafflePrize = {
   image: string
   imageAlt: string
   entryHref: string     // Zeffy raffle form URL for this lottery
+  hidden?: boolean      // true = kept in the T&Cs schedule but not shown on the raffle page
 }
 
 export const rafflePrizes: RafflePrize[] = [
@@ -59,7 +60,7 @@ export const rafflePrizes: RafflePrize[] = [
     brand: 'ZR2',
     name: 'Butane Ball Vape',
     quantity: 2,
-    valueEach: 25,
+    valueEach: 45,
     ticketPrice: 1,
     maxEntries: 20000,
     image: '/images/raffle/zr2-butane-ball-vape.png',
@@ -77,6 +78,8 @@ export const rafflePrizes: RafflePrize[] = [
     image: '/images/raffle/dynavap-m7-xl.png',
     imageAlt: 'Dynavap M7 XL: a long stainless-steel vaporiser',
     entryHref: '',
+    // Temporarily hidden: delivery not yet confirmed. Delete this line to show it again.
+    hidden: true,
   },
   {
     id: 'MCAW-06',
@@ -89,6 +92,8 @@ export const rafflePrizes: RafflePrize[] = [
     image: '/images/raffle/dynavap-vong-x.png',
     imageAlt: 'Dynavap VonG X: a stainless-steel vaporiser with a glass mouthpiece',
     entryHref: '',
+    // Temporarily hidden: delivery not yet confirmed. Delete this line to show it again.
+    hidden: true,
   },
 ]
 
@@ -128,5 +133,16 @@ export function formatGBP(value: number): string {
   }).format(value)
 }
 
-export const totalPrizeCount = rafflePrizes.reduce((sum, p) => sum + p.quantity, 0)
-export const totalPrizeValue = rafflePrizes.reduce((sum, p) => sum + p.quantity * p.valueEach, 0)
+/** Prizes shown on the raffle page (hidden ones are left out). */
+export const visibleRafflePrizes = rafflePrizes.filter((p) => !p.hidden)
+
+export const totalRaffleCount = visibleRafflePrizes.length
+export const totalPrizeCount = visibleRafflePrizes.reduce((sum, p) => sum + p.quantity, 0)
+export const totalPrizeValue = visibleRafflePrizes.reduce((sum, p) => sum + p.quantity * p.valueEach, 0)
+
+const numberWords = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve']
+
+/** 4 → "four"; falls back to digits above twelve. */
+export function numberToWords(value: number): string {
+  return numberWords[value] ?? String(value)
+}
