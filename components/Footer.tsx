@@ -25,6 +25,8 @@ export default function Footer() {
             <Link href="/about">About</Link>
             <Link href="/open-campaign">Our statement</Link>
             <Link href="/events">Programme</Link>
+            <Link href="/learn/resources">Resources</Link>
+            <Link href="/learn/stories">Patient stories</Link>
             <Link href="/raffle">Prize raffle</Link>
             <Link href="/partners">Partners</Link>
             <Link href="/get-involved">Get Involved</Link>
@@ -34,8 +36,8 @@ export default function Footer() {
           <div className="footer-links">
             <h5>Get Involved</h5>
             <Link href="/events">Attend an event</Link>
-            <Link href="/get-involved#share">Share your story</Link>
-            <Link href="/get-involved#partner">Become a partner</Link>
+            <Link href="/contact?tab=story">Share your story</Link>
+            <Link href="/contact?enquiry=Partnership">Become a partner</Link>
             <Link href="/get-involved#support">Support MCAW</Link>
             <Link href="/raffle">Enter the raffle</Link>
           </div>

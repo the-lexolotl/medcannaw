@@ -65,6 +65,22 @@ const partners: Partner[] = [
     href: 'https://www.mcfriendly.co.uk',
     logo: '/images/partners/medicinal-cannabis-friendly.png',
   },
+  {
+    name: 'Review Budz',
+    role: 'Partner',
+    description:
+      'A patient-led app where UK medical cannabis patients share reviews of prescribed flower, compare products and connect with the community.',
+    href: 'https://reviewbudz.app',
+    logo: '/images/partners/review-budz.png',
+  },
+  {
+    name: 'EthVida',
+    role: 'Partner',
+    description:
+      'A Community Interest Company building resilience in the community, advocating for better medical cannabis practices and educational resources for practitioners and patients.',
+    href: 'https://www.ethvida.com',
+    logo: '/images/partners/ethvida.png',
+  },
 ]
 
 export default function PartnersPage() {

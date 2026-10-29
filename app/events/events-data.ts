@@ -176,7 +176,7 @@ export const events: ProgrammeEvent[] = [
       'What needs to change?',
     ],
     afterTopics: ['Special segment: Ask the Clinic — questions submitted by patients.'],
-    statusNote: UPA_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-the-clinics-tickets-2003855225923',
   },
 
   // ───────────── Tuesday 3 November ─────────────
@@ -240,7 +240,7 @@ export const events: ProgrammeEvent[] = [
       'Medical education',
       'The future of prescribing',
     ],
-    statusNote: UPA_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-the-doctors-tickets-2003706234285',
   },
 
   // ───────────── Wednesday 4 November ─────────────
@@ -288,7 +288,7 @@ export const events: ProgrammeEvent[] = [
     afterTopics: [
       'Special feature: The Global Patient Declaration — a collaborative statement setting out the principles that patients around the world believe should underpin medical cannabis policy.',
     ],
-    statusNote: UPA_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-global-activism-day-tickets-2003855370355',
   },
 
   // ───────────── Thursday 5 November ─────────────
@@ -370,7 +370,7 @@ export const events: ProgrammeEvent[] = [
       'Brighton Medicinal Cannabis Summit',
       'UPA’s campaigns today',
     ],
-    statusNote: UPA_NOTE,
+    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-upas-advocacy-legacy-tickets-2003855454607',
   },
 
   // ───────────── Friday 6 November ─────────────
@@ -434,7 +434,7 @@ export const events: ProgrammeEvent[] = [
       'Criminalisation of patients',
       'What legislation could look like',
     ],
-    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-grow-your-own-tickets-2003234403025?aff=ebdsoporgprofile',
+    bookingHref: 'https://www.eventbrite.com/e/upa-mcaw-grow-your-own-tickets-2003234403025',
   },
 
   // ───────────── Saturday 7 November ─────────────

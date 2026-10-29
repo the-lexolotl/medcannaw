@@ -1,21 +1,36 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import Link from 'next/link'
 import CircleField from '@/components/CircleField'
+
+const subjectMap: Record<string, string> = {
+  'General enquiry': 'General enquiry — MCAW website',
+  'Patient support': 'Patient support — MCAW website',
+  'Media enquiry': 'Media enquiry — MCAW website',
+  'Partnership': 'Partnership enquiry — MCAW website',
+  'Volunteering': 'Volunteering enquiry — MCAW website',
+}
 
 export default function Contact() {
   const [activeTab, setActiveTab] = useState<'general' | 'story'>('general')
   const [generalStatus, setGeneralStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
   const [storyStatus, setStoryStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle')
+  const [enquiryType, setEnquiryType] = useState('')
   const [subject, setSubject] = useState('General enquiry — MCAW website')
 
-  const subjectMap: Record<string, string> = {
-    'General enquiry': 'General enquiry — MCAW website',
-    'Patient support': 'Patient support — MCAW website',
-    'Media enquiry': 'Media enquiry — MCAW website',
-    'Partnership': 'Partnership enquiry — MCAW website',
-    'Volunteering': 'Volunteering enquiry — MCAW website',
-  }
+  // Links from elsewhere on the site can open the right form:
+  //   /contact?tab=story              → Share your story tab
+  //   /contact?enquiry=Partnership    → General tab with the enquiry type preselected
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search)
+    if (params.get('tab') === 'story') setActiveTab('story')
+    const enquiry = params.get('enquiry')
+    if (enquiry && subjectMap[enquiry]) {
+      setEnquiryType(enquiry)
+      setSubject(subjectMap[enquiry])
+    }
+  }, [])
 
   async function handleGeneralSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
@@ -88,6 +103,7 @@ export default function Contact() {
               <button
                 type="button"
                 className={`form-tab ${activeTab === 'general' ? 'active' : ''}`}
+                aria-pressed={activeTab === 'general'}
                 onClick={() => setActiveTab('general')}
               >
                 General enquiry
@@ -95,6 +111,7 @@ export default function Contact() {
               <button
                 type="button"
                 className={`form-tab ${activeTab === 'story' ? 'active' : ''}`}
+                aria-pressed={activeTab === 'story'}
                 onClick={() => setActiveTab('story')}
               >
                 Share your story
@@ -130,7 +147,11 @@ export default function Contact() {
                         id="enquiry"
                         name="enquiry_type"
                         required
-                        onChange={e => setSubject(subjectMap[e.target.value] || 'Enquiry — MCAW website')}
+                        value={enquiryType}
+                        onChange={e => {
+                          setEnquiryType(e.target.value)
+                          setSubject(subjectMap[e.target.value] || 'Enquiry — MCAW website')
+                        }}
                       >
                         <option value="" disabled>Please select...</option>
                         <option value="General enquiry">General enquiry</option>
@@ -180,6 +201,9 @@ export default function Contact() {
 
                     <div className="form-info-box">
                       <p>We welcome stories from patients, carers, clinicians and advocates. Every submission is reviewed by our team before it&apos;s shared as part of the programme.</p>
+                      <p style={{ marginTop: '0.5rem' }}>
+                        <Link href="/learn/stories" style={{ fontWeight: 700 }}>Read stories already shared →</Link>
+                      </p>
                     </div>
 
                     <div className="form-group">

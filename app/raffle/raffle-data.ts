@@ -29,7 +29,7 @@ export const rafflePrizes: RafflePrize[] = [
     maxEntries: 20000,
     image: '/images/raffle/vaphit-quartz-on-quartz-kit.png',
     imageAlt: 'Vaphit Quartz on Quartz Kit: a clear quartz vaporiser with a rose-gold band',
-    entryHref: '',
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-vaphit-quartz-on-quartz-kit-2',
   },
   {
     id: 'MCAW-02',
@@ -41,7 +41,7 @@ export const rafflePrizes: RafflePrize[] = [
     maxEntries: 20000,
     image: '/images/raffle/vaphit-3d-pro-kit.png',
     imageAlt: 'Vaphit 3D Pro Kit: a glass vaporiser and tools with a black Vaphit carry case',
-    entryHref: '',
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-vaphit-3d-pro-kit-2',
   },
   {
     id: 'MCAW-03',
@@ -53,19 +53,19 @@ export const rafflePrizes: RafflePrize[] = [
     maxEntries: 20000,
     image: '/images/raffle/vaphit-3d-kit.png',
     imageAlt: 'Vaphit 3D Kit: a clear glass vaporiser with a copper-coloured coil',
-    entryHref: '',
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-vaphit-3d-kit',
   },
   {
     id: 'MCAW-04',
     brand: 'ZR2',
-    name: 'Butane Ball Vape',
+    name: 'Mini Butane Stick Ball Vape',
     quantity: 2,
     valueEach: 45,
     ticketPrice: 1,
     maxEntries: 20000,
     image: '/images/raffle/zr2-butane-ball-vape.png',
-    imageAlt: 'ZR2 Butane Ball Vape: a clear glass vaporiser with metal balls inside',
-    entryHref: '',
+    imageAlt: 'ZR2 Mini Butane Stick Ball Vape: a clear glass vaporiser with metal balls inside',
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-zr2-mini-butane-stick-ball-vape',
   },
   {
     id: 'MCAW-05',
@@ -77,9 +77,7 @@ export const rafflePrizes: RafflePrize[] = [
     maxEntries: 10000,
     image: '/images/raffle/dynavap-m7-xl.png',
     imageAlt: 'Dynavap M7 XL: a long stainless-steel vaporiser',
-    entryHref: '',
-    // Temporarily hidden: delivery not yet confirmed. Delete this line to show it again.
-    hidden: true,
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-dynavap-m7-xl',
   },
   {
     id: 'MCAW-06',
@@ -91,9 +89,7 @@ export const rafflePrizes: RafflePrize[] = [
     maxEntries: 8000,
     image: '/images/raffle/dynavap-vong-x.png',
     imageAlt: 'Dynavap VonG X: a stainless-steel vaporiser with a glass mouthpiece',
-    entryHref: '',
-    // Temporarily hidden: delivery not yet confirmed. Delete this line to show it again.
-    hidden: true,
+    entryHref: 'https://www.zeffy.com/en-GB/ticketing/mcaw-raffle-dynavap-vong-x',
   },
 ]
 
