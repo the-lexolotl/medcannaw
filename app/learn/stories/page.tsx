@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 
 // Quote shown in the lime band at the top of the page
 const communityQuote = {
-  text: 'When patients work together, great change is possible.',
-  name: 'Elizabeth Spence',
-  role: 'Patient Advocate & Lead of Women’s Cannabis UK',
+  text: 'MCAW 2026 gives us, the patients, a chance to come together, share our experiences, the knowledge we have gained along the way and the opportunity to steer conversations in the right direction, towards real change, that benefits those that need it most.',
+  name: 'Nicola Stevenson – The M-C Fairy',
+  role: 'Independent Patient Advocate & MCAW Volunteer',
 }
 
 export default function StoriesPage() {
