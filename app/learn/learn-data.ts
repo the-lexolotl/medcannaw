@@ -99,6 +99,53 @@ export type LearnItem = {
 const items: LearnItem[] = [
   // ───────────── Resources ─────────────
   {
+    id: 'ethvida-beyond-the-prescription',
+    section: 'resources',
+    format: 'video',
+    tagLabel: 'Talk',
+    title: 'Beyond the Prescription: Cannabis & Holistic Health',
+    subtitle: 'A whole-person approach to medical cannabis and wellbeing',
+    summary:
+      'Berta Kaguako of EthVida explores where cannabis-based medicines fit in UK healthcare, and how sleep, movement and nutrition support your health alongside them.',
+    details: [
+      'The talk covers what medical cannabis is (CBMPs, THC and CBD), where it fits in UK healthcare and what the evidence says, the conditions currently being explored, and how the endocannabinoid system overlaps with the nervous system.',
+      'Berta then looks at three everyday foundations — sleep, movement and nutrition, including what is and isn’t known about ketosis and cannabis — and finishes with a realistic whole-person daily routine.',
+      'Berta Kaguako, M.A., is a Holistic & Mental Health Coach and founder of EthVida, a non-profit offering free mental health coaching and holistic care planning. Educational content only — not individual medical advice.',
+    ],
+    topic: 'Holistic health',
+    author: 'Berta Kaguako, M.A.',
+    authorRole: 'Founder, EthVida',
+    authorUrl: 'https://www.ethvida.com',
+    date: '2026-11-04',
+    youtubeId: 'G5JZNdAY0zY',
+  },
+
+  {
+    id: 'mcuk-vaporisation-glossary',
+    section: 'resources',
+    format: 'download',
+    tagLabel: 'PDF guide',
+    title: 'Vaporisation Glossary',
+    subtitle: 'A patient’s guide to temperatures, vaporisation points and device terms, in plain English',
+    summary:
+      'A plain-English reference for UK patients who vaporise prescribed cannabis flower. Look up a word you’ve heard, check what a temperature setting means, or get to know a new device.',
+    details: [
+      'Covers safety essentials, how vaporising works (conduction, convection and temperature stepping), the main device types — portable, desktop, stick vapes, ball vapes and induction heaters — and temperature reference tables for common cannabinoids and terpenes.',
+      'It also includes an A–Z glossary, a guide to connections and accessories, cleaning and care tips, a settings log to record what works for you, and where to get further support.',
+      'Written by patients, for patients, at Medicinal Cannabis UK CIC. Contributors: Lee Bailey & Lex Wolfe. General information only — not medical advice. Brand names are examples, not endorsements.',
+    ],
+    topic: 'Vaporising',
+    host: 'mcuk',
+    author: 'Medicinal Cannabis UK CIC',
+    date: '2026-11-04',
+    image: {
+      src: '/images/learn/mcuk-vaporisation-guide.jpg',
+      alt: 'Cover of the MCUK patients guide “Vaporisation Glossary”, showing a temperature dial from 150°C to 230°C',
+    },
+    file: { href: '/learn/mcuk-vaporisation-guide.pdf', type: 'PDF', size: '2.1 MB' },
+  },
+
+  {
     id: 'cta-roadside-survival-guide-driving',
     section: 'resources',
     format: 'download',
