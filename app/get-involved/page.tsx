@@ -11,6 +11,8 @@ type Way = {
   secondary?: { label: string; href: string }
 }
 
+const DONATION_HREF = 'https://www.zeffy.com/en-GB/donation-form/support-medical-cannabis-awareness-week'
+
 const ways: Way[] = [
   {
     id: 'attend',
@@ -41,9 +43,11 @@ const ways: Way[] = [
     id: 'support',
     title: 'Support MCAW',
     description: 'Funds raised support participating organisations and patient-led causes, and help keep the campaign free and open to everyone.',
-    cta: { label: 'Support the campaign', href: '/contact' },
+    cta: { label: 'Donate to MCAW', href: DONATION_HREF },
   },
 ]
+
+const isExternal = (href: string) => /^https?:\/\//.test(href)
 
 export default function GetInvolvedPage() {
   return (
@@ -71,7 +75,19 @@ export default function GetInvolvedPage() {
             <h2>{way.title}</h2>
             <p>{way.description}</p>
             <div className="involved-row__actions">
-              <Link href={way.cta.href} className="btn btn-secondary">{way.cta.label}</Link>
+              {isExternal(way.cta.href) ? (
+                <a
+                  href={way.cta.href}
+                  className="btn btn-secondary"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {way.cta.label}
+                  <span className="visually-hidden"> (opens in a new tab)</span>
+                </a>
+              ) : (
+                <Link href={way.cta.href} className="btn btn-secondary">{way.cta.label}</Link>
+              )}
               {way.secondary && (
                 <Link href={way.secondary.href} className="involved-row__link">
                   {way.secondary.label} →
