@@ -142,7 +142,7 @@ const items: LearnItem[] = [
       src: '/images/learn/mcuk-vaporisation-guide.jpg',
       alt: 'Cover of the MCUK patients guide “Vaporisation Glossary”, showing a temperature dial from 150°C to 230°C',
     },
-    file: { href: '/learn/mcuk-vaporisation-guide.pdf', type: 'PDF', size: '2.1 MB' },
+    file: { href: '/learn/mcuk-vaporisation-guide-v1.0.pdf', type: 'PDF', size: '2.1 MB' },
   },
 
   {
